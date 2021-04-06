@@ -22,42 +22,42 @@
     </header>
     <main class="todo">
       <div id="todo__add">
-        <label for="new-task">Add Item</label>
-        <input id="new-task" type="text" />
-        <button>Add</button>
+        <label class="title" for="new-task">Add Item</label>
+        <input class="inner__text" id="new-task" type="text" />
+        <button class="btn">Add</button>
       </div>
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks" class="todo__incomplete">
-        <li class="todo__incomplete-item">
-          <input type="checkbox" />
+      <label class="title" for="new-task">ToDO</label>
+      <ul id="incomplete-tasks" class="todo__incomplete list">
+        <li class="todo__incomplete-item list__item">
+          <input type="checkbox" class="checkbox" />
           <label class="item__task">Pay Bills</label>
-          <input type="text" />
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <input class="inner__text" type="text" />
+          <button class="edit btn">Edit</button>
+          <button class="delete btn">
             <img class="delete__img" src="./remove.svg"  alt="delete icon"/>
           </button>
         </li>
-        <li class="edit-mode todo__incomplete-item">
-          <input type="checkbox" />
-          <label class="task">Go Shopping</label>
+        <li class="edit-mode todo__incomplete-item list__item">
+          <input type="checkbox" class="checkbox" />
+          <label class="item__task">Go Shopping</label>
           <input 
             type="text"
             value="Go Shopping"
-            class="task" />
-          <button class="edit">Save</button>
-          <button class="delete">
+            class="task inner__text"/>
+          <button class="edit btn">Save</button>
+          <button class="delete btn">
             <img class="delete__img" src="./remove.svg" alt="delete icon"/>
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks" class="todo__completed">
-        <li class="todo__completed-item">
+      <label class="title" for="new-task">Completed</label>
+      <ul id="completed-tasks" class="todo__completed list">
+        <li class="todo__completed-item list__item">
           <input type="checkbox" checked />
           <label class="item__task">See the Doctor</label>
-          <input type="text" />
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <input class="inner__text" type="text" />
+          <button class="edit btn">Edit</button>
+          <button class="delete btn">
             <img class="delete__img" src="./remove.svg" alt="delete icon"/>
           </button>
         </li>
